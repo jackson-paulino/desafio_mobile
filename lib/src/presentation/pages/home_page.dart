@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _goToTheLake(LatLng? position) async {
     if (position != null) {
-      intPosition = LatLng(position.latitude, position.latitude);
+      intPosition = LatLng(position.latitude, position.longitude);
     }
 
     Marker marker = Marker(
